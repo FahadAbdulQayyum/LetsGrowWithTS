@@ -1,17 +1,18 @@
 import { createSlice, nanoid } from '@reduxjs/toolkit';
 
+export type typeTodo = {
+    id: string,
+    text: string,
+}
+
 const initialState = {
-    todos: [{ id: nanoid(), text: "Hello" }]
-    // counter: 0,
+    todos: [{ id: nanoid(), text: "Hello" }] as typeTodo[]
 }
 
 export const counterSlice = createSlice({
-    name: 'counter',
+    name: 'todo',
     initialState,
     reducers: {
-        // increment: (state, action) => {
-        //     state.counter++;
-        // }
 
         addTodo: (state, action) => {
             state.todos.push({ id: nanoid(), text: action.payload.text });

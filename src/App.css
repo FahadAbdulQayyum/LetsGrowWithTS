@@ -1,4 +1,36 @@
-#root {
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  padding: 10px 20px;
+}
+
+/* .center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+
+.internal {
+  display: block;
+}
+
+.inline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inline button {
+  background-color: rgba(250, 96, 96, 0.582);
+  margin: 2px 8px;
+}
+
+/* #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -39,4 +71,4 @@
 
 .read-the-docs {
   color: #888;
-}
+} */
